@@ -1,0 +1,1490 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  font-family: "Poppins", sans-serif;
+}
+
+
+.loginMainDiv {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: whitesmoke;
+}
+
+.loginInnerDiv {
+  width: 50vmax;
+  height: 32vmax;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+.loginInnerDiv1 {
+  width: 25vmax;
+  height: 100%;
+  border-radius: 20px;
+  margin-right: 20px;
+  position: relative; /* Necessary for the overlay */
+  overflow: hidden; /* Ensures the overlay doesn't extend outside the div */
+  background-image: url("/Assets/udyogsetuImg1.jpeg"); /* Replace with your image path */
+  background-size: cover;
+  background-position: center;
+  padding: 0px 20px;
+}
+
+.loginInnerDiv1::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Adjust the opacity as needed */
+  border-radius: 20px; /* Match the border-radius of the div */
+  z-index: 1;
+}
+
+.loginInnerDiv1 .overlayText {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 2; /* Ensure the text is above the overlay */
+  color: white; /* Adjust text color as needed */
+  padding: 20px; /* Adjust padding for positioning */
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.headingUdyogSetu {
+  font-family: "Days One", sans-serif;
+  font-size: 51px;
+}
+
+.loginPara1 {
+  font-size: 17px;
+  color: white;
+}
+
+.setuSpan {
+  color: #ff9800;
+}
+
+.loginInnerDiv2 {
+  width: 25vmax;
+  height: 100%;
+  background-color: #ff9900e3;
+  border-radius: 20px;
+  margin-right: 20px;
+  padding: 10px 25px;
+}
+
+.helloPara {
+  font-size: 35px;
+  margin-top: 20px;
+  color: rgb(52, 52, 52);
+}
+
+.loginInnerDiv2Para1 {
+  color: white;
+  font-size: 18px;
+}
+
+.loginAadharDiv {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+}
+
+.loginAadharDiv p {
+  margin-left: 10px;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.loginAadharDiv input {
+  height: 50px;
+  padding: 10px 20px;
+  border-radius: 30px;
+  color: rgb(52, 52, 52);
+  border: solid 1px black;
+  font-size: 17px;
+  font-family: "Poppins", sans-serif;
+  outline: 0;
+}
+
+.loginAadharDiv input::placeholder {
+  color: rgb(120, 120, 120);
+}
+
+.loginPasswordDiv {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+
+.loginPasswordDiv p {
+  margin-left: 10px;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.loginPasswordDiv input {
+  height: 50px;
+  padding: 15px 20px;
+  border-radius: 30px;
+  color: rgb(52, 52, 52);
+  border: solid 1px black;
+  font-size: 17px;
+  font-family: "Poppins", sans-serif;
+  outline: 0;
+}
+
+.loginPasswordDiv input::placeholder {
+  color: rgb(120, 120, 120);
+}
+
+.showPasswordDiv {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+.showPasswordBtn {
+  margin-right: 15px;
+  background-color: #ff9900e3;
+  border: 0;
+  font-size: 14px;
+  font-family: "Poppins", sans-serif;
+  margin-top: 5px;
+  cursor: pointer;
+}
+
+.loginBtnDiv {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
+  margin-bottom: 50px;
+}
+
+.getInButton {
+  width: 190px;
+  padding: 12px 20px;
+  background-color: rgb(52, 52, 52);
+  color: white;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 17px;
+  border: 0;
+}
+
+.getInButton:hover {
+  width: 190px;
+  padding: 12px 20px;
+  background-color: rgb(35, 35, 35);
+  color: white;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 17px;
+  border: 0;
+}
+
+.createAccountDiv {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.toCreateAccBtn {
+  margin-left: 5px;
+  text-decoration: none;
+  color: white;
+}
+
+.nameInputPara {
+  margin-top: -20px;
+}
+
+.nameInput {
+  margin-bottom: -20px;
+}
+
+.createACCBtnDiv {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 25px;
+  margin-bottom: -10px;
+}
+
+.mainPageDiv {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.navBarDiv {
+    width: 100%;
+    height: 70px;
+    background-color: rgb(21, 21, 21);
+    color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+.logoPara {
+  font-size: 30px;
+  margin-left: 20px;
+  font-family: "Days One", sans-serif;
+}
+
+.registerAndLoginDiv {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  margin-right: 20px;
+}
+
+.registerLink {
+  text-decoration: none;
+  background-color: #ffeb3b;
+  padding: 6px 20px;
+  color: black;
+  font-size: 14px;
+  margin-right: 10px;
+  border-radius: 30px;
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+}
+
+.logoutBtn {
+  text-decoration: none;
+  background-color: #ff9800;
+  padding: 6px 30px;
+  color: black;
+  font-size: 14px;
+  border-radius: 30px;
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+  border: 0;
+}
+
+.navigationBtnDiv {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.navigationLinks {
+  text-decoration: none;
+  color: white;
+  font-size: 17px;
+  position: relative;
+  margin-right: 30px;
+  padding-bottom: 5px;
+}
+
+.navigationLinks::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 0;
+  background-color: white;
+  transition: width 0.3s ease-in-out;
+}
+
+.navigationLinks:hover::after {
+  width: 100%;
+}
+
+.sectionMainPage1 {
+    width: 100%;
+    height: 42vmax;
+    background-image: url('/Assets/udyogsetuImg2.png'); /* Add your image path here */
+    background-size: cover; /* Ensure the image covers the whole div */
+    background-position: center; /* Center the image */
+    position: relative; /* Position relative to contain the overlay */
+    color: white; /* Optional: Text color */
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    background-color: white;
+}
+
+.overlay {
+    position: absolute; /* Position absolute to overlay it on top of the background */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    color: white; /* Text color */
+}
+
+.section1Heading{
+    width: 55%;
+    font-size: 61px;
+    margin-left: 70px;
+    margin-top: 70px;
+    color: rgb(209, 209, 209);
+}
+
+.section1Para{
+    width: 57%;
+    font-size: 19px;
+    text-align: left;
+    margin-left: 70px;
+    margin-top: 30px;
+    color: rgb(209, 209, 209);
+}
+
+.microEnterpreneurSpan{
+    color: #ff9800;
+    font-size: 85px;
+}
+
+.joinUsBtn{
+    width: 180px;
+    padding: 12px 20px;
+    background-color: transparent;
+    color: white;
+    font-size: 17px;
+    margin-left: 70px;
+    margin-top: 60px;
+    border: solid 2px white;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.joinUsBtn:hover{
+    width: 180px;
+    padding: 12px 20px;
+    background-color: #ff9800;
+    color: black;
+    font-size: 17px;
+    margin-left: 70px;
+    margin-top: 60px;
+    border: solid 2px #ff9800;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.sectionMainPage2{
+    width: 100%;
+    height: 33vmax;
+    background-color: rgb(243, 243, 243);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.sectionMainPage2Heading{
+    font-size: 37px;
+    margin-top: 30px;
+    /* border-bottom: solid 2px #ff9800; */
+    border-radius: 20px;padding-bottom: 10px;
+}
+
+.sectionMainPage2missionDivS{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px 100px;
+    margin-top: 80px;
+}
+
+
+
+  @keyframes slideInLeft {
+    from {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideInBottom {
+    from {
+      transform: translateY(100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideInRight {
+    from {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  .sectionMainPage2Mission1 {
+    width: 27%;
+    height: 15vmax;
+    border-radius: 20px;
+    position: relative;
+    background-image: url("/Assets/missionImg1.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0;
+    transform: translateY(100%);
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+  }
+  
+  .sectionMainPage2Mission1.animate {
+    animation: slideInBottom 1s ease-in-out forwards;
+  }
+  
+  .sectionMainPage2Mission2 {
+    width: 27%;
+    height: 15vmax;
+    border-radius: 20px;
+    position: relative;
+    background-image: url("/Assets/missionImg2.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0;
+    transform: translateY(100%);
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+  }
+  
+  .sectionMainPage2Mission2.animate {
+    animation: slideInBottom 1s ease-in-out forwards;
+  }
+  
+  .sectionMainPage2Mission3 {
+    width: 27%;
+    height: 15vmax;
+    border-radius: 20px;
+    position: relative;
+    background-image: url("/Assets/missionImg3.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0;
+    transform: translateY(100%);
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+  }
+  
+  .sectionMainPage2Mission3.animate {
+    animation: slideInBottom 1s ease-in-out forwards;
+  }
+  
+  .overlayMission {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgb(0, 0, 0,0.4); /* Adjust the overlay color and opacity as needed */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white; /* Adjust the text color as needed */
+    padding: 20px;
+    text-align: center;
+    border-radius: 20px;
+  }
+  
+
+
+
+  .missionPara{
+    font-size: 25px;
+  }
+
+  .detailMissionDiv{
+    width: 100%;
+    height: 100%;
+    background-color: #ff9800;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* section 3 animation */
+
+  @keyframes slideUp {
+    from {
+      transform: translateY(100px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  .section3FirstInnerDiv {
+    width: 400px;
+    height: 350px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+    opacity: 0; /* Start hidden */
+  }
+  
+  .section3FirstInnerDiv.animate {
+    animation: slideUp 1s ease forwards;
+  }
+  
+  .sectionMainPage3InnerDiv {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 20px;
+    padding: 0px 40px;
+  }
+  
+
+
+
+
+  /* ------------------------- */
+
+  .sectionMainPage3{
+    width: 100%;
+    height: 40vmax;
+    background-color: rgb(21, 21, 21);
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .sectionMainPage3Heading{
+    font-size: 40px;
+    margin-top: 30px;
+    color: rgb(203, 203, 203);
+    padding-bottom: 10px;
+    /* border-bottom: solid 2px #ffeb3b ; */
+    border-radius: 20px;
+}
+
+
+
+.differenceSpan{
+  color: #ffeb3b;
+}
+
+
+
+.imageDivSection3{
+  width: 300px;
+  height: 300px;
+  border: solid 9px rgb(203, 203, 203);
+  border-radius: 350px;
+  padding: 10px;
+}
+
+.imageDivSection3 img{
+  width: 100%;
+  height: 100%;
+  border-radius: 350px;
+}
+.imageDivSection3:hover{
+  width: 300px;
+  height: 300px;
+  border: solid 9px #ffeb3b;
+  border-radius: 350px;
+  padding: 10px;
+}
+
+.paraSection3{
+  margin-top: 20px;
+  font-size: 21px;
+}
+
+.sectionMainPage4{
+  width: 100%;
+  height: 35vmax;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.sectionMainPage4Heading{
+  margin-top: 30px;
+  font-size: 41px;
+}
+
+.sectionMainPage4PartnersDiv{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0px 60px;
+  margin-top: 100px;
+}
+
+.section4PartnerDiv{
+  width: 330px;
+  height: 300px;
+  border: solid 2px black;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.section4PartnerDiv img{
+  width: 100%;
+  height: 80%;
+  border-radius: 20px;
+}
+
+.sectionMainPage5{
+  width: 100%;
+  padding: 30px;
+}
+
+.section5InnerDiv{
+  width: 100%;
+  height: 500px;
+  border-radius: 30px;
+  position: relative;
+  background-image: url('/Assets/nanaoandmicroImg.jpg'); /* Add your background image URL */
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+}
+
+.overlaySection5{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  border-radius: 30px;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Adjust overlay color and opacity */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+  text-align: center;
+  padding: 20px 50px; /* Adjust padding as needed */
+}
+
+.overlaySection5 h1{
+  font-size: 30px;
+}
+
+.overlaySection5 p{
+  font-size: 17px;
+  margin-top: 20px;
+}
+
+.section5InnerDivEStatus{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 30px;
+  text-align: center;
+}
+
+.status1{
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+  background-color: #ffeb3b;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+  margin-right: 50px;
+  padding: 20px;
+  position: relative;
+}
+
+.status1 p{
+  border-radius: 100px;
+  width: 100%;
+  height: 100%;
+  font-size: 17px;
+  color: black;
+  font-weight: 500;
+  margin-top: 30px;
+  position: absolute;
+}
+
+.statusSpan{
+  font-size: 31px;
+  font-weight: 600;
+}
+
+.registerMainPage{
+  width: 100%;
+  height: 702px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.registerProductHeading{
+  margin-top: 30px;
+  font-size: 32px;
+  font-weight: 400;
+  padding-bottom: 5px;
+}
+
+.inputFieldMainDiv{
+  width: 50%;
+  height: 500px;
+  margin-top: 10px;
+}
+
+.inputFieldDiv1{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 0px 80px;
+  margin-top: 20px;
+}
+
+.inputWithParaDiv{
+  display: flex;
+  flex-direction: column;
+}
+
+.inputWithParaDiv p{
+  margin-left: 10px;
+}
+
+.inputWithParaDiv input{
+  width: 17vmax;
+  padding: 10px;
+  font-size: 15px;
+  border-radius: 30px;
+  font-family: "Poppins", sans-serif;
+}
+
+.inputFieldDiv1Photo{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.photoInput{
+  width: 20vmax;
+  padding: 10px 15px;
+  border-radius: 20px;
+  border: solid 2px rgb(58, 58, 58);
+}
+
+.inputWithPhotoDiv{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.inputWithPhotoDiv p{
+  margin-bottom: 10px;
+}
+
+.cancelBtn{
+  width: 10vmax;
+  padding: 10px 20px;
+  background-color: rgb(255, 72, 72);
+  color: black;
+  font-size: 18px;
+  border-radius: 30px;
+  border: 0;
+  margin-top: 30px;
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+}
+
+.registerBtn{
+  width: 20vmax;
+  padding: 15px 20px;
+  background-color: #ffeb3b;
+  color: black;
+  border: 0;
+  font-size: 18px;
+  border-radius: 30px;
+  margin-top: 20px;
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+}
+
+
+.registerBtn:hover{
+  width: 20vmax;
+  padding: 15px 20px;
+  background-color: #ff9800;
+  color: black;
+  border: 0;
+  font-size: 18px;
+  border-radius: 30px;
+  margin-top: 20px;
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+}
+
+.productDetailsMainDiv{
+  width: 100%;
+  padding: 20px 40px;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+.productDiv{
+  width: 21%;
+  height: 500px;
+  color: white;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgb(21, 21, 21);
+  margin-right: 20px;
+  border-radius: 30px;
+
+}
+
+.imgDiv{
+  width: 100%;
+  height: 230px;
+}
+
+.imgDiv img{
+  width: 100%;
+  height: 100%;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+}
+
+.productNameDiv{
+  width: 100%;
+  padding: 0px 10px;
+}
+
+.productNamePara{
+  font-size: 27px;
+  font-weight: 500;
+}
+
+.productPricePara{
+  margin-top: 10px;
+  font-size: 22px;
+}
+
+.productSellBtnDiv{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 10px 15px;
+}
+
+.contactSellerBtn{
+  width: 100%;
+  padding: 10px;
+  border-radius: 30px;
+  background-color: #ff9800;
+  color: black;
+  font-size: 16px;
+  border: 0;
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+}
+
+.buyNowBtn{
+  width: 100%;
+  padding: 10px;
+  border-radius: 30px;
+  background-color: #ffeb3b;
+  color: black;
+  border: 0;
+  font-size: 16px;
+  margin-top: 10px;
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+}
+
+.productMapDiv{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+/* --------------- Mentors Div ---------------------- */
+
+.mentorMainDiv{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 50px;
+}
+
+.mentorShipHeading{
+  margin-top: 10px;
+}
+
+.mentorListDiv{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  margin-top: 40px;
+}
+
+.mentorsProgramDiv{
+  width: 22%;
+  height: 330px;
+  background-color: rgb(21, 21, 21);
+  border-radius: 20px;
+  color: white;
+  margin-right: 20px;
+}
+
+.mentorsProgramDiv img{
+  width: 100%;
+  height: 200px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+
+.mentorShipTitlePara{
+  margin-left: 10px;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.timeMentorPara{
+  margin-left: 10px;
+  color: #ffeb3b;
+}
+
+.notifyButtonDiv{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0px 10px;
+}
+
+.notifyButtonDiv button{
+  width: 100%;
+  padding: 8px;
+  border-radius: 30px;
+  background-color: rgb(199, 199, 199);
+  color: black;
+  border: 0;
+  margin-top: 10px;
+  font-size: 18px;
+  font-family: "Poppins", sans-serif;
+}
+
+.mentorRequestDiv {
+  width: 100%;
+  height: 360px;
+  background-color: rgb(21, 21, 21);
+  border-radius: 20px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Centering overlay content */
+  position: relative; /* To position overlay absolutely within this div */
+  text-align: center;
+  background-image: url('/Assets/mentorshipImgBackground.jpg'); /* Add your background image */
+  background-size: cover; /* Make sure the background image covers the whole div */
+  background-position: center; /* Center the background image */
+  margin-top: 40px;
+  text-align: center;
+}
+
+.overlayMentor{
+  position: absolute; /* Absolute positioning to cover the entire parent div */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7); /* Semi-transparent overlay */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white; /* Text color inside overlay */
+  border-radius: 20px; /* Match the border radius of the parent div */
+}
+
+.mentorShipHeading{
+  width: 60%;
+  font-size: 41px;
+}
+
+.mentorShipPara{
+  width: 60%;
+  margin-top: 30px;
+}
+
+.joinMentorshipBtn{
+  width: 20%;
+  padding: 10px;
+  margin-top: 20px;
+  font-size: 19px;
+  border: 0;
+  border-radius: 50px;
+  background-color: #ff9800;
+  color: black;
+  font-family: "Poppins", sans-serif;
+  cursor: pointer;
+}
+
+.joinMentorshipBtn:hover{
+  background-color: #fda727;
+}
+
+.mentorShipHeadingSecond{
+  width: 60%;
+  font-size: 41px;
+  margin-top: 40px;
+}
+
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.popupInner{
+  width: 450px;
+  height: 500px;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 80%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  flex-direction: column;
+}
+
+.popupInnerBuyers{
+  width: 450px;
+  height: 500px;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 80%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  flex-direction: column;
+  overflow-y: scroll;
+}
+
+.inputMentorField{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.inputMentorField input{
+  width: 100%;
+  padding: 10px;
+  font-family: "Poppins", sans-serif;
+}
+
+.inputFieldParaDiv{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+
+.formDivMentor{
+  width: 100%;
+  padding: 0px 40px;
+  margin-top: 20px;
+}
+
+.textAreaMentor{
+  width: 100%;
+  height: 90px;
+  resize: none;
+  padding: 10px;
+  font-family: "Poppins", sans-serif;
+}
+
+.submitBtnAndCloseBtnDiv{
+  width: 100%;
+  margin-top: 20px;
+}
+
+.submitBtnAndCloseBtnDiv button{
+  padding: 10px;
+  width: 130px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.submitBtnMentor{
+  background-color: rgba(127, 253, 127, 0.71);
+}
+
+.closeBtnMentor{
+  background-color: rgb(255, 74, 74);
+}
+
+/* ---------------------- finance group ---------------------------- */
+
+.mainFinanceDiv{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: start;
+}
+
+.financeHeading{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+
+.financeHeading h1{
+  margin-top: 30px;
+  margin-left: 40px;
+  font-size: 41px;
+}
+
+.financeHeading p{
+  margin-left: 42px;
+  font-size: 28px;
+}
+
+.financelistingDiv{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  margin-top: 10px;
+  padding: 20px 40px;
+}
+
+.financeGroupDiv{
+  width: 25%;
+  height: 500px;
+  background-color: rgb(21, 21, 21);
+  border-radius: 20px;
+  color: white;
+  margin-right: 30px;
+  text-align: center;
+}
+
+.financeGroupDiv p{
+  margin: 10px;
+  margin-bottom: 30px;
+}
+
+.financeLink{
+  width: 100%;
+  text-decoration: none;
+  margin-top: 40px;
+  color: black;
+  background-color: rgb(232, 232, 232);
+  padding: 10px 90px;
+  border-radius: 30px;
+}
+
+.financeLink:hover{
+  background-color: rgb(246, 245, 245);
+}
+
+.financeCImg{
+  width: 100%;
+  height: 300px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.enquireNowBtn{
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+  background-color: white;
+  color: black;
+  margin-top: 70px;
+}
+
+/* ---------------------------- Buyers Div Css ------------------------------------ */
+
+.buyersProfileDiv{
+  width: 400px;
+  height: 240px;
+  background-color: black;
+  border-radius: 30px;
+  color: white;
+  padding: 20px;
+  background-color: rgb(24, 24, 24);
+  margin-right: 20px;
+}
+
+.buyersName{
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+
+.buyersInterestPara{
+  margin-left: 10px;
+}
+
+.buyersStyle{
+  color: #ffeb3b;
+}
+
+.sendRequestDiv{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0px 10px;
+  margin-top: 20px;
+}
+
+.sendRequestBtn{
+  width: 100%;
+  padding: 10px;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  background-color: #ffeb3b;
+}
+
+.acceptBtn{
+  width: 100%;
+  padding: 10px;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  background-color: #ffb445;
+  margin-right: 10px;
+}
+
+
+
+.productImageInput{
+  border: solid 1px black;
+}
+
+/* ------------------- Google Translate CSS --------------------- */
+
+.google_translate_element {
+  margin: auto;
+  margin-right: 10px ;
+  margin-top: 10px;
+}
+
+.goog-te-banner-frame.skiptranslate {
+  display: none !important;
+}
+
+body {
+  top: 0 !important;
+}
+
+.productDescriptionDiv{
+  width: 100%;
+  padding: 0px 10px;
+  margin-bottom: 10px;
+}
+
+.customToast{
+  background-color: #ff9800 !important;
+  font-family: "Poppins", sans-serif !important;
+}
+
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modalContent {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.productUpdateForm{
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+
+.updateInputs{
+  padding: 10px;
+  width: 20vmax;
+  font-size: 15px;
+  font-family: "Poppins", sans-serif;
+  margin-top: 5px;
+}
+
+.productUpdateBtn{
+  margin-top: 20px;
+  padding: 10px;
+  font-size: 17px;
+  font-family: "Poppins", sans-serif;
+  cursor: pointer;
+  background-color: #ffeb3b;
+  border: 0;
+  border-radius: 30px;
+}
+
+.closeUpdateBtn{
+  margin-top: 20px;
+  padding: 5px 50px;
+  font-size: 15px;
+  font-family: "Poppins", sans-serif;
+  cursor: pointer;
+  background-color: black;
+  color: white;
+  border: 0;
+  border-radius: 20px;
+}
+
+.modalActions {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  margin-top: 20px;
+}
+
+.confirmDeleteProductBtn {
+  background-color: #ff9800;
+  color: black;
+  font-size: 15px;
+  padding: 10px 40px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 20px;
+  font-family: "Poppins", sans-serif;
+}
+
+.cancelBtnDeleteProduct {
+  background-color: #ffeb3b;
+  color: black;
+  font-size: 15px;
+  padding: 10px 40px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+}
+
+
+.noBuyerRequestDiv{
+  width: 100%;
+}
+
+.noBuyerRequestDiv p{
+  font-weight: 600;
+  font-size: 21px;
+}
+
+.bulkBuyersDiv{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+
+
+
+
+
+
+
+
+
+
